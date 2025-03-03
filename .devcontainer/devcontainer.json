@@ -1,0 +1,16 @@
+{
+    "name": "Persistent TV Install Backend",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "postCreateCommand": "pip install -r requirements.txt && python app.py",
+    "forwardPorts": [5000],
+    "remoteUser": "codespace",
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {
+        "version": "3.10"
+      }
+    }
+  }
+  
